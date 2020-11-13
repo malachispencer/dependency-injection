@@ -14,8 +14,8 @@ class Diary
     @entry_class = entry_class
   end
 
-  def add
-    @entries << @entry_class.new
+  def add(title, body)
+    @entries << @entry_class.new(title, body)
   end
 
   def index
